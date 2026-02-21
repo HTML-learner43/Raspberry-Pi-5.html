@@ -7,13 +7,13 @@
       body {
         background-color: #AFDFE4;
       }
-      #koko {
+      #piimage {
         width: 60%;
         margin: 8px 10px;
         vertical-align: middle;
         display: inline-block;
       }
-    .super {
+    .imager {
       width: 50%;
       vertical-align: middle;
       display: inline-block;
@@ -30,37 +30,37 @@
         max-width: 75%;
         margin: 20px 20px 20px 20px;
       }
-      #spe,.ss {
+      .note {
         color: #F15A22;
       }
-      #okasimaoukoku {
+      #piimagetwo {
         display: inline-block;
         vertical-align: middle;
         max-width: 50%;
       }
-      #syobo {
+      #addendum {
         font-size: 14px;
         text-decoration: line-through;
       }
-      #adapter {
+      #power {
         border-bottom: solid 1px #F15A22;
       }
       h2 {
         border: solid 1px black;
       }
-      .oka {
+      .cases {
         display: inline-block;
         max-width: 500px;
         max-height: 250px;
       }
-      .ok {
+      .fans {
         vertical-align: middle;
         max-width: 300px;
       }
       #must {
         border-bottom: #F15A22 solid 1px;
       }
-      #fan {
+      #adapter {
         max-width: 250px;
         max-height: 200px;
       }
@@ -75,12 +75,12 @@
     <h2>このサイトはRaspberry Pi 5についてまとめたサイトです。</h2>
     <h3>目次</h3>
     <ul>
-      <li><a href="#gaiyo">概要</a></li>
-      <li><a href="#sio">主な使用用途</a></li>
-      <li><a href="#how">どうやって使う？</a></li>
-      <li><a href="#p">パーツの選び方</a></li>
+      <li><a href="#overview">概要</a></li>
+      <li><a href="purpose">主な使用用途</a></li>
+      <li><a href="#howtouse">どうやって使う？</a></li>
+      <li><a href="#selectparts">パーツの選び方</a></li>
     </ul>
-    <h4 id="gaiyo">概要</h4>
+    <h4 id="overview">概要</h4>
     <p> Raspberry Pi5は、手のひらサイズの小さなコンピューターです。イギリスのRaspbery Pi Foundationが作っています。見た目は小さいですが、普通のパソコンのように使えます。</p>
     <p>Raspberry Pi 5は、これまでのモデルよりも性能が大きく向上しており、より速く、よりなめらかに動作します。新しいプロセッサを搭載しているため、
       インターネットの閲覧や動画の再生、プログラミング学習なども快適に行えます。
@@ -88,8 +88,8 @@
       デスクトップパソコンのように使うことができます。
       教育用としてはもちろん、電子工作やロボット制作、ホームサーバー作りなど、さまざまな用途に活用されています。
       小さいながらも本格的なコンピューターとして、多くの人に利用されています。
-      <img id="koko" src="PjfazxMvpkBgoE9G2kJiDh-1006156954.jpg" alt="Raspberry Pi image" />左はラズベリーパイ5の画像。電子工作用の豊富なピンなどが特徴。</p>
-   <h4 id="sio">主な使用用途</h4>
+      <img id="piimage" src="PjfazxMvpkBgoE9G2kJiDh-1006156954.jpg" alt="Raspberry Pi image" />左はラズベリーパイ5の画像。電子工作用の豊富なピンなどが特徴。</p>
+   <h4 id="purpose">主な使用用途</h4>
    <ul>
     <li>デスクトップとしての使用</li>
     <li>ロボットの作成やLEDなどを使った電子工作</li>
@@ -97,7 +97,7 @@
     <li>専用OSによるレトロゲーム機</li>
     <li>その他IoT機器としての使用など</li>
    </ul>
-   <h4 id="how">どうやって使う？</h4>
+   <h4 id="howtouse">どうやって使う？</h4>
    <p>必要なもの</p>
    <ol>
     <li>Raspberry Pi5本体</li>
@@ -110,21 +110,21 @@
     <li>インターネット環境</li>
     <li>他のパソコン</li>
    </ol>
-   <p>パーツの詳しい選び方は<a href="#p">ここから</a>どうぞ</p>
+   <p>パーツの詳しい選び方は<a href="#selectparts">ここから</a>どうぞ</p>
    <h4>1.OSを書き込む</h4>
    <p>他のパソコンに「Raspberry Pi Imager」をインストール.インストールは<a href="https://www.raspberrypi.com/software/">こちらから</a>.
-    Micro SDカードをパソコンに入れたら、imgerの指示通りにOSやモデルなどを選択します.<img class="super" src="aoo.png" alt="the imager image" />
-    左はRaspberry Pi ImagerのOS選択画面。おすすめは<span id="spe">Raspberry Pi OS 64bit.</span></p>
+    Micro SDカードをパソコンに入れたら、imgerの指示通りにOSやモデルなどを選択します.<img class="imager" src="aoo.png" alt="the imager image" />
+    左はRaspberry Pi ImagerのOS選択画面。おすすめは<span id="Recommendation">Raspberry Pi OS 64bit.</span></p>
    <p>インストールが完了したらMicro SDカードをパソコンから取り外してラズベリーパイ5に差し込みます。
      電源ケーブルとHDMIケーブルをラズベリーパイに刺して最初のセットアップをしたら使えるようになります。</p>
    <h4>パーツの選び方</h4>
-   <p id="p">ここからはパーツの選び方をわかりやすく解説していきます。</p>
+   <p id="selectparts">ここからはパーツの選び方をわかりやすく解説していきます。</p>
    <h5>本体の選び方</h5>
    <p>いちばん重要な本体の選び方です。やりたいことによって選ぶべきモデルが変わります。
     例えば、デスクトップとして使用したいのであれば8GBモデル、16GBモデルがおすすめ。
     プログラミング学習、電子工作をしたいのであればラズベリーパイ5の2GBモデルか、4GBモデルがおすすめ。ちなみに電子工作をしたい場合は他のモデルもおすすめ</p>
-   <p>ただし、メモリ容量が高ければ高いほど価格も上がっていくので用途に沿った選び方が重要です。<img id="okasimaoukoku"src="00-2806037817.jpg" alt="hi" />
-    ちなみにメモリは多ければ多いほど性能がよくなるわけではありません。ですが用途によっては<span class="ss">少なすぎると本当に動作が遅くなります。</span>気をつけてください。</p>
+   <p>ただし、メモリ容量が高ければ高いほど価格も上がっていくので用途に沿った選び方が重要です。<img id="piimagetwo"src="00-2806037817.jpg" alt="hi" />
+    ちなみにメモリは多ければ多いほど性能がよくなるわけではありません。ですが用途によっては<span class="Note">少なすぎると本当に動作が遅くなります。</span>気をつけてください。</p>
     <p>下は参考の価格表です。</p>
     <ul>
       <li>1GBモデル 7000円程度</li>
@@ -133,21 +133,21 @@
       <li>8GBモデル 25000円程度</li>
       <li>16GBモデル 40000円〜</li>
     </ul>
-    <p id="syobo"><span class="ss">ただしこれは円安の影響です。Raspberry Pi Foundationはボッタクリではないので誤解しないでください</span></p>
+    <p id="addendum"><span class="note">ただしこれは円安の影響です。Raspberry Pi Foundationはボッタクリではないので誤解しないでください</span></p>
    <h4>電源アダプタ</h4>
    <p>続いては電源アダプタです。これもラズベリーパイを動かすのに欠かせないパーツです。特に最新のラズベリーパイ5では5V5Aという特殊な電源を要求するため家にあるアダプタなどでは動作しません。
-    必ず専用のものを購入しましょう。Amazon等で<span id="adapter">「5V5A 電源アダプタ」</span>と入力するとラズベリーパイ5専用のものが出てきます。</p>
-   <img id="fan" src="511YxeJEt5L._AC_-477910653.jpg" alt="adapter image" />
+    必ず専用のものを購入しましょう。Amazon等で<span id="power">「5V5A 電源アダプタ」</span>と入力するとラズベリーパイ5専用のものが出てきます。</p>
+   <img id="adapter" src="511YxeJEt5L._AC_-477910653.jpg" alt="adapter image" />
    <h4>MicroSDカード</h4>
    <p>このMicro SDカードにOSを入れなければ何も始まりせん。電源アダプタの次に大切なものでもあります。
     容量は32GB以上がおすすめ。16GBだとすぐに容量が足りなくなってしまいます。ソフトウェアなどをたくさんインストールしたいのあれば64GB以上も視野に入ります.
     そして、少しでも快適に利用したけれUHS-Iといわれるより高速な規格を選ぶのがおすすめです。
-    ちなみに<span id="ss">激安のSDカードはだめです。データが簡単に消えてしまったりします。</span></p>
+    ちなみに<span id="note">激安のSDカードはだめです。データが簡単に消えてしまったりします。</span></p>
    <p><img class="coi" src="61RZwgWOvDL._AC_-1971743731.jpg" alt="ha" />    Iと右端に書かれているのがUHS-Iの証</p>
    <h4>モニター</h4>
    これに関しては特にこれでないといけないという決まりはありません。家のテレビでも、なんでもOKです。
    <h4>microHDMI対応HDMIケーブル</h4>
-   <p>Amazon等で<span class="ss">「MicroHDMI to HDMI」</span>と検索すると出てきます。これも特に重要な点はありません。</p>
+   <p>Amazon等で<span class="note">「MicroHDMI to HDMI」</span>と検索すると出てきます。これも特に重要な点はありません。</p>
    <h4>キーボード</h4>
    <p>キーボードに関しても特別な点はありません。無線キーボードでも、有線キーボードでも構いません。</p>
    <h4>マウス</h4>
@@ -162,11 +162,11 @@
    <h4>ケース</h4>
    <p>基本的にラズベリーパイはケースなしでも運用できますが、ケースはある方が見栄えが良くなったり、ショートを防げたりします。
     そんなケースも様々な種類があるので自分にあったものを見つけるのが一番です。</p>
-   <img class="oka" src="71A00XbX2sL._AC_-535801532.jpg" alt="case image" />
-   <img class="oka" src="PI5-CASE-F-details-1-4254762307.jpg" alt="clear case" />
-   <img class="oka" src="616zRuGhf3L._AC_-2356834904.jpg" alt="case image" />
-   <img class="oka" src="81VMXa72-AL._AC_-226987566.jpg" alt="case image" />
-   <img class="oka" src="kksb-tall-case-hats-9-scaled-1166110335.jpg" alt="case image" />
+   <img class="cases" src="71A00XbX2sL._AC_-535801532.jpg" alt="case image" />
+   <img class="cases" src="PI5-CASE-F-details-1-4254762307.jpg" alt="clear case" />
+   <img class="cases" src="616zRuGhf3L._AC_-2356834904.jpg" alt="case image" />
+   <img class="cases" src="81VMXa72-AL._AC_-226987566.jpg" alt="case image" />
+   <img class="cases" src="kksb-tall-case-hats-9-scaled-1166110335.jpg" alt="case image" />
    <p>ケースは<span id="must">冷却ファン付属がマスト。</span>理由は下で解説します。</p>
    <h4>冷却ファン</h4>
    <p>冷却ファンは、もはや「あると便利」な周辺機器ではなく、実質的に必須ともいえる存在です。というのも、近年の高性能プロセッサの搭載により発熱量が増加しているためです。
@@ -174,7 +174,7 @@
       さらに、高温状態が続くことで本体への負荷が蓄積し、寿命を縮める要因にもなり得ます。
       そのため、安定した性能を維持し、長期間安心して使用するためにも、冷却ファンの導入は非常に重要です。</p>
    <p>基本はケースに付属していますが、もしケースに含まれていなければ別途購入がおすすめです。</p>
-   <p><img class="ok" src="Active-Cooler-for-Raspberry-Pi-5-2176683405.jpg" alt="raspi-cooler" />左の画像がラズベリーパイの冷却ファン。
+   <p><img class="fans" src="Active-Cooler-for-Raspberry-Pi-5-2176683405.jpg" alt="raspi-cooler" />左の画像がラズベリーパイの冷却ファン。
     プロセッサなどの負荷に応じてファンの回転数が変わるため静音。</p>
   </body>
 </html>
