@@ -57,7 +57,7 @@
         vertical-align: middle;
         max-width: 300px;
       }
-      #must {
+      #must,#boardlife {
         border-bottom: #F15A22 solid 1px;
       }
       #adapter {
@@ -69,10 +69,18 @@
     width: 100%;
   }
 }
+  .hatimg {
+    max-width: 250px;
+    vertical-align: middle;
+  }
+  #menu {
+    border: solid 2px aquamarine;
+  }
     </style>
 </head>
 <body>
     <h2>このサイトはRaspberry Pi 5についてまとめたサイトです。</h2>
+    <div id="menu">
     <h3>目次</h3>
     <ul>
       <li><a href="#overview">概要</a></li>
@@ -80,6 +88,7 @@
       <li><a href="#howtouse">どうやって使う？</a></li>
       <li><a href="#selectparts">パーツの選び方</a></li>
     </ul>
+    </div>
     <h4 id="overview">概要</h4>
     <p> Raspberry Pi5は、手のひらサイズの小さなコンピューターです。イギリスのRaspbery Pi Foundationが作っています。見た目は小さいですが、普通のパソコンのように使えます。</p>
     <p>Raspberry Pi 5は、これまでのモデルよりも性能が大きく向上しており、より速く、よりなめらかに動作します。新しいプロセッサを搭載しているため、
@@ -171,10 +180,19 @@
    <h4>冷却ファン</h4>
    <p>冷却ファンは、もはや「あると便利」な周辺機器ではなく、実質的に必須ともいえる存在です。というのも、近年の高性能プロセッサの搭載により発熱量が増加しているためです。
       冷却対策を行わずに使用すると、「サーマルスロットリング」と呼ばれる現象が発生し、本来の処理性能を十分に発揮できなくなる可能性があります。
-      さらに、高温状態が続くことで本体への負荷が蓄積し、寿命を縮める要因にもなり得ます。
+      さらに、高温状態が続くことで本体への負荷が蓄積し、<span id="boardlife">寿命を縮める要因にもなり得ます。</span>
       そのため、安定した性能を維持し、長期間安心して使用するためにも、冷却ファンの導入は非常に重要です。</p>
    <p>基本はケースに付属していますが、もしケースに含まれていなければ別途購入がおすすめです。</p>
-   <p><img class="fans" src="Active-Cooler-for-Raspberry-Pi-5-2176683405.jpg" alt="raspi-cooler" />左の画像がラズベリーパイの冷却ファン。
+   <p><img class="fans" src="Active-Cooler-for-Raspberry-Pi-5-2176683405.jpg" alt="Raspberry Pi fan" />左の画像がラズベリーパイの冷却ファン。
     プロセッサなどの負荷に応じてファンの回転数が変わるため静音。</p>
+   <h4>カスタマイズ</h4>
+   <p>ここまで、ラズベリーパイを動かす手順、必要なパーツなどを解説してきましたが、ここからはHATと呼ばれるラズベリーパイ拡張基盤について解説します。</p>
+   <p>HATとはラズベリーパイになにか専用の機能を追加したり、性能を向上させることができます。下は例です。</p>
+   <p><img class="hatimg" src="raspberry-pi-m.2-hat-plus-1-165424808.jpg" alt="M.2 HAT" />例えばこのHATはM.2と呼ばれる規格のSSDをラズベリーパイに取り付けるためのもので、
+    SSDをつけることで起動やアプリケーション等の動作が速くなります。</p>
+   <p>他にもこの「Raspberry Pi AI HAT+」はラズベリーパイでAIを使った推論をするときなどに使います。
+    <img class="hatimg" src="raspberry-pi-ai-hat-13-tops-modul-hat-z-akceleratorem-ai-do-raspberry-pi-5-591310953.jpg" alt="Raspberry Pi AI HAT" /></p>
+  
+   </p>
   </body>
 </html>
