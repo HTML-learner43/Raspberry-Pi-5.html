@@ -27,7 +27,7 @@
         display: inline-block;
       }
       p {
-        max-width: 75%;
+        max-width: 95%;
         margin: 20px 20px 20px 20px;
       }
       .note {
@@ -76,13 +76,18 @@
   #menu {
     border: solid 2px aquamarine;
   }
+  #all {
+    border: dashed 1px aqua;
+    margin: 10px 10px 10px 10px;
+    background-color: rgb(118, 118, 176)
+  }
     </style>
 </head>
 <body>
     <h2>このサイトはRaspberry Pi 5についてまとめたサイトです。</h2>
     <div id="menu">
     <h3>目次</h3>
-    <ul>
+    <ul id="all">
       <li><a href="#overview">概要</a></li>
       <li><a href="#specifications">詳しいスペック</a></li>
       <li><a href="#purpose">主な使用用途</a></li>
@@ -115,6 +120,16 @@
       <li>HATコネクタ 4pin</li>
       <li>RTCコネクタ 1ポート</li>
       <li>UARTコネクタ 1ポート</li>
+    </ul>
+    <p>ラズベリーパイ4からの進化点</p>
+    <ul>
+      <li>電源ボタンの追加</li>
+      <li>PCI Express2.0の追加</li>
+      <li>ARM Cortex A76の搭載</li>
+      <li>メモリ容量のバリエーションに16GBの追加</li>
+      <li>GPUの性能向上</li>
+      <li>実質的にCSI,DSIポートがそれぞれ2ポートに増設</li>
+      
     </ul>
    <h4 id="purpose">主な使用用途</h4>
    <ul>
@@ -212,14 +227,13 @@
     <img class="hatimg" src="raspberry-pi-ai-hat-13-tops-modul-hat-z-akceleratorem-ai-do-raspberry-pi-5-591310953.jpg" alt="Raspberry Pi AI HAT" /></p>
    <p>このようにラズベリーパイの性能を最大限に引き出す多種多様なHATがあるので調べてみてはいかがでしょうか。</p>
    <h4>様々なHATについて</h4>
-   <p><img src="raspberry-pi-ai-hat-13-tops-modul-hat-z-akceleratorem-ai-do-raspberry-pi-5-591310953.jpg" alt="AI HAT" />Raspberry Pi AI HATは上でも
-    解説した通りラズベリーパイ5にAIの機能を拡張させるHATです。お値段は高いですが、ローカルでAIを動かすという用途なら効果的な投資とも言えます。</p>
-   <p><img src="raspberry-pi-m.2-hat-plus-1-165424808.jpg" alt="M.2 HAT" />これも先程解説しましたが、ラズベリーパイにM.2規格のSSDをつなげるためのHATです。
-    ラズベリーパイOSやアプリケーションをこのSSDから起動するように設定すると待ち時間が大幅に短縮されて作業効率が上がります。
-    主にラズベリーパイをデスクトップとして使ったり、ホームサーバーとして使う用途におすすめ。</p>
-   <p><img src="71z51DbB5GL._AC_SX466_.jpg" alt="UPS Image" />これはUPSというHATで、突然の停電による電源切断でラズベリーパイのデータなどを破損しないようにするものです。
+   <p><img class="hatimg" src="raspberry-pi-ai-hat-13-tops-modul-hat-z-akceleratorem-ai-do-raspberry-pi-5-591310953.jpg" alt="AI HAT" />Raspberry Pi AI HATは上でも
+    解説した通りラズベリーパイ5にAIの機能を拡張させるHATです。値段は高いですが、ローカルでAIを動かすという用途なら効果的な投資とも言えます。</p>
+   <p><img class="hatimg" src="raspberry-pi-m.2-hat-plus-1-165424808.jpg" alt="M.2 HAT" />ラズベリーパイにM.2規格のSSDをつなげるためのHATです。
+    ラズベリーパイOSやアプリケーションをこのSSDから起動するように設定すると待ち時間が大幅に短縮されて作業効率が上がります。</p>
+   <p><img class="hatimg"src="71z51DbB5GL._AC_SX466_.jpg" alt="UPS Image" />これはUPSというHATで、
+    突然の停電による電源切断でラズベリーパイのデータなどを破損しないようにするものです。
     サーバー用途のラズベリーパイにこれをつけると安定性が増します。</p>
-   <p><img src=""</p>
    </ul>
   </body>
 </html>
